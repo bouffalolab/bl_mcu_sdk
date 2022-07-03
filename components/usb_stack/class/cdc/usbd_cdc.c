@@ -51,7 +51,7 @@ static void usbd_cdc_acm_reset(void)
     usbd_cdc_acm_cfg.line_coding.bParityType = 0;
     usbd_cdc_acm_cfg.line_coding.bCharFormat = 0;
     usbd_cdc_acm_cfg.configured = false;
-    usbd_cdc_acm_cfg.uart_first_init_flag = 0;
+    usbd_cdc_acm_cfg.uart_first_init_flag = 1;
 }
 
 /**
